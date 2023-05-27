@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7995234092828661969}
   - component: {fileID: 7995234092828661968}
   - component: {fileID: 7995234092828661971}
+  - component: {fileID: 768898116062512645}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -147,3 +148,15 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &768898116062512645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7995234092828661970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8658018a03a7edb49b454af05be74dad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
