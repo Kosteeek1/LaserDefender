@@ -3,16 +3,22 @@ using UnityEngine;
 
 public class Pathfinder : MonoBehaviour
 {
-    [SerializeField] private WaveConfigSO waveConfig;
+    private EnemySpawner enemySpawner;
+    private WaveConfigSO waveConfig;
     private List<Transform> waypoints;
     private int waypointIndex = 0;
+
     void Start()
     {
+        waveConfig = enemySpawner.getCurrentWave();
         waypoints = waveConfig.GetWaypoints();
         transform.position = waypoints[waypointIndex].position;
     }
 
-    
+    void Awake()
+    {
+        enemySpawner = FindObjectOfType<EnemySpawner>();
+    }
     void Update()
     {
         FollowPath();
